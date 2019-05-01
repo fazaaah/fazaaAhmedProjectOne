@@ -8,6 +8,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* GENERAL STYLES */
 
+section {
+	padding: 100px 0;
+	font-size: 0;
+}
+
 body {
 	font-family: 'Nova Flat', cursive;
 }
@@ -15,11 +20,11 @@ body {
 p {
 	font-family: 'Catamaran', sans-serif;
 	color: #1f2022;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 a {
-	font-size: 20px;
+	font-size: 18px;
 	text-decoration: none;
 }
 
@@ -39,15 +44,11 @@ h3 {
 	margin: 0 auto;
 }
 
-section {
-	padding: 100px 0;
-}
-
 .textBlock a {
 	text-transform: uppercase;
 	color: #186684;
 	border: solid 3px #e85b26;
-	padding: 10px;
+	padding: 12px 15px;
 	margin-top: 20px;
 	transition: 0.3s ease;
 }
@@ -58,7 +59,13 @@ section {
 }
 
 .textBlock p {
-	margin-bottom: 20px;
+	padding-bottom: 30px;
+}
+
+@media (max-width: 1180px) {
+	.wrapper {
+		width: 90%;
+	}
 }
 
 @media (max-width: 700px) {
@@ -90,18 +97,14 @@ h1 {
 	background-position: center center;
 }
 
-/* .footForward {
-	padding: 100px;
-	background-color: rgba(227, 228, 234, 0.89);
-	display: inline-block;
-} */
-
 h2 {
-	font-size: 42px;
+	font-size: 38px;
 	color: #186684;
+	margin: 0;
+	padding-bottom: 13px;
 }
 
-ul {
+.header-top ul {
 	padding-top: 30px;
 	margin: 0 auto;
 	text-align: center;
@@ -117,7 +120,7 @@ li {
 }
 
 .header-top nav {
-	width: 34%;
+	width: 400px;
 	margin: 0 auto;
 	/* border: 1px solid black; */
 }
@@ -196,6 +199,7 @@ nav a:hover {
 .description {
 	width: 81%;
 	padding-top: 100px;
+	/* margin: 0; */
 }
 
 @media (max-width: 1409px) {
@@ -220,12 +224,63 @@ nav a:hover {
 	padding-right: 10%;
 }
 
+.right {
+	margin-left: auto;
+}
+
 .mobile {
 	display: none;
 }
 
+/* @media (max-width: 1040px) {
+	.image2,
+	.description1,
+	.description2 {
+		clear: both;
+		width: 100%;
+	}
+
+	.description1, .description2 {
+		padding: 0;
+	}
+
+	.description {
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 38px;
+		padding-bottom: 38px;
+	}
+
+	.image1 {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	} */
+
+@media (max-width: 1268px) {
+	.description {
+		padding-top: 70px;
+	}
+}
+
+@media (max-width: 1180px) {
+	.description {
+		padding-top: 50px;
+		width: 90%;
+	}
+
+	.description1 {
+		padding-left: 5%;
+	}
+
+	.description2 {
+		padding-right: 5%;
+	}
+}
+
 @media (max-width: 700px) {
-	/* .image1, */
 	.image2,
 	.description1,
 	.description2 {
@@ -251,6 +306,10 @@ nav a:hover {
 	.mobile {
 		display: block;
 	}
+
+	/* .section1 img {
+		height: 200px;
+	} */
 
 }
 
@@ -341,6 +400,7 @@ nav a:hover {
 
 .gram h2 {
 	text-align: center;
+	margin-bottom: 80px;
 }
 
 .gallery {
@@ -379,7 +439,7 @@ nav a:hover {
 }
 
 .info nav {
-	width: 40%;
+	width: 400px;
 	margin: 0 auto;
 	font-size: 20px;
 	text-align: center;
@@ -387,6 +447,8 @@ nav a:hover {
 
 .info ul {
 	text-align: center;
+	margin-top: 0;
+	margin-bottom: 30px;
 }
 
 .info li {
@@ -396,7 +458,6 @@ nav a:hover {
 
 .info h2 {
 	color: #e85b26;
-	margin-bottom: 17px;
 }
 
 .info a {
@@ -420,6 +481,7 @@ nav a:hover {
 
 .emailSubmit input {
 	float: left;
+	margin-top: 3px;
 }
 
 .emailAddress {
@@ -438,7 +500,7 @@ nav a:hover {
 	text-transform: uppercase;
 	color: #fff;
 	transition: 0.3s ease;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .button:hover {
@@ -455,7 +517,6 @@ nav a:hover {
 
 @media (max-width: 700px) {
 
-	.info nav, 
 	.contact, 
 	.updated, 
 	.emailAddress, 
