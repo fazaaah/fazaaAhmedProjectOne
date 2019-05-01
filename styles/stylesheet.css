@@ -118,7 +118,6 @@ li {
 .header-top nav {
 	width: 400px;
 	margin: 0 auto;
-	/* border: 1px solid black; */
 }
 
 nav a {
@@ -212,13 +211,6 @@ nav a:hover {
 .description {
 	width: 81%;
 	padding-top: 100px;
-	/* margin: 0; */
-}
-
-@media (max-width: 1409px) {
-	.description {
-		padding-top: 80px
-	}
 }
 
 .description h2 {
@@ -241,9 +233,14 @@ nav a:hover {
 	margin-left: auto;
 }
 
-/* .tablet, */
 .mobile {
 	display: none;
+}
+
+@media (max-width: 1409px) {
+	.description {
+		padding-top: 80px
+	}
 }
 
 @media (max-width: 1268px) {
@@ -268,7 +265,6 @@ nav a:hover {
 }
 
 @media (max-width: 1040px) {
-
 	.wrapper2 {
 		width: 80%;
 		margin: 0 auto;
@@ -288,14 +284,8 @@ nav a:hover {
 	.mobile,
 	.image2 {
 		display: block;
-		/* max-height: 350px; */
 		width: 100%;
 		margin: 50px auto 0 auto;
-		/* padding-left: 5%;
-		padding-right: 5%; */
-		/* overflow: hidden;
-		object-fit: contain;
-		object-position: 50% 50%; */
 	}
 
 	.image2 {
@@ -307,32 +297,25 @@ nav a:hover {
 		margin-bottom: 50px;
 		width: 100%;
 	}
-
-	/* .tablet {
-		display: block;
-		margin-top: -300px;
-		margin-bottom: -300px;
-	}
-
-	.tablet2 {
-		display: block;
-		margin-top: -300px;
-	} */
-
-	/* .description1 {
-		margin-top: 280px;
-	} */
 }
 
 @media (max-width: 700px) {
-	.wrapper2 {
-		width: 100%;
+	.mobile,
+	.image2 {
+		display: block;
+		padding: 0;
+		margin: 0;
+		max-height: 350px;
+		overflow: hidden;
+		object-fit: contain;
+		object-position: 50% 50%;
 	}
 	
+	.wrapper2,
+	.mobile,
 	.image2,
 	.description1,
 	.description2 {
-		clear: both;
 		width: 100%;
 	}
 
@@ -344,26 +327,9 @@ nav a:hover {
 	.description {
 		width: 90%;
 		margin: 0 auto;
-		/* padding-top: 38px; */
 		padding-bottom: 70px;
+		text-align: center;
 	}
-
-	/* .tablet {
-		display: none;
-	} */
-
-	.mobile,
-	.image2 {
-		display: block;
-		width: 100%;
-		padding: 0;
-		margin: 0;
-		max-height: 350px;
-		overflow: hidden;
-		object-fit: contain;
-		object-position: 50% 50%;
-	}
-
 }
 
 /*GIVING BACK */
@@ -409,16 +375,14 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
-	/* .gbImage, .gbPara {
-		clear: both;
-		width: 100%;
-		margin: 0 auto;
-	} */
-
 	.gbPara h2,
 	.gbPara a {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.gbPara {
+		text-align: center;
 	}
 }
 
@@ -429,7 +393,6 @@ nav a:hover {
 	background-size: cover;
 	background-position: center center;
 	margin: 0 auto;
-	/* height: 61vh; */
 }
 
 .container {
@@ -483,7 +446,8 @@ nav a:hover {
 	}
 }
 
-/* Section 4 - THE GRAM */
+/* THE GRAM */
+
 .gram {
 	background-color: #fdfdfd;
 }
@@ -523,7 +487,6 @@ nav a:hover {
 	.gram h2 {
 		margin-bottom: 40px;
 	}
-
 }
 
 /* Section 5 - INFO */
@@ -532,22 +495,26 @@ nav a:hover {
 	background: #eee;
 }
 
+.info nav,
+.info ul,
+.info li {
+	text-align: center;
+}
+
 .info nav {
 	width: 400px;
 	margin: 0 auto;
 	font-size: 20px;
-	text-align: center;
 }
 
 .info ul {
-	text-align: center;
 	margin-top: 0;
 	margin-bottom: 30px;
 }
 
-.info li {
+.info li,
+.contact p {
 	margin: 0;
-	text-align: center;
 }
 
 .info h2 {
@@ -558,24 +525,23 @@ nav a:hover {
 	color: black;
 }
 
-.contact {
+.contact,
+.updated,
+.emailSubmit input {
 	float: left;
+}
+
+.contact {
 	width: 33.3%;
 	margin-right: 16.7%;
 }
 
-.contact p {
-	margin: 0;
-}
-
 .updated {
-	float: left;
 	width: 50%;
 }
 
 .emailSubmit input {
-	float: left;
-	margin-top: 3px;
+	margin-top: 5px;
 }
 
 .emailAddress {
@@ -602,13 +568,6 @@ nav a:hover {
 	color: #186684;
 }
 
-/* @media (max-width: 1318px) {
-	.info nav {
-		width: 60%;
-		margin: 0 auto;
-	}
-} */
-
 @media (max-width: 1040px) {
 	.emailAddress {
 		width: 60%;
@@ -620,7 +579,6 @@ nav a:hover {
 }
 
 @media (max-width: 800px) {
-
 	.contact, 
 	.updated, 
 	.emailAddress, 
@@ -638,7 +596,6 @@ nav a:hover {
 	.updated h2 {
 		margin-top: 30px;
 	}
-
 }
 
 /* FOOTER */
