@@ -62,12 +62,6 @@ h3 {
 	padding-bottom: 30px;
 }
 
-@media (max-width: 1180px) {
-	.wrapper {
-		width: 90%;
-	}
-}
-
 @media (max-width: 700px) {
 	.wrapper {
 		width: 90%;
@@ -247,7 +241,7 @@ nav a:hover {
 	margin-left: auto;
 }
 
-.tablet,
+/* .tablet, */
 .mobile {
 	display: none;
 }
@@ -274,19 +268,47 @@ nav a:hover {
 }
 
 @media (max-width: 1040px) {
-	.image2,
+
+	.wrapper2 {
+		width: 80%;
+		margin: 0 auto;
+	}
+
 	.description1,
 	.description2 {
 		clear: both;
 		width: 100%;
+		padding-left: 0;
 	}
 
-	.image1,
-	.image2 {
+	.image1 {
 		display: none;
 	}
 
-	.tablet {
+	.mobile,
+	.image2 {
+		display: block;
+		/* max-height: 350px; */
+		width: 100%;
+		margin: 50px auto 0 auto;
+		/* padding-left: 5%;
+		padding-right: 5%; */
+		/* overflow: hidden;
+		object-fit: contain;
+		object-position: 50% 50%; */
+	}
+
+	.image2 {
+		float: none;
+	}
+
+	.description {
+		padding-top: 20px;
+		margin-bottom: 50px;
+		width: 100%;
+	}
+
+	/* .tablet {
 		display: block;
 		margin-top: -300px;
 		margin-bottom: -300px;
@@ -295,14 +317,18 @@ nav a:hover {
 	.tablet2 {
 		display: block;
 		margin-top: -300px;
-	}
+	} */
 
-	.description1 {
+	/* .description1 {
 		margin-top: 280px;
-	}
+	} */
 }
 
 @media (max-width: 700px) {
+	.wrapper2 {
+		width: 100%;
+	}
+	
 	.image2,
 	.description1,
 	.description2 {
@@ -318,17 +344,20 @@ nav a:hover {
 	.description {
 		width: 90%;
 		margin: 0 auto;
-		padding-top: 38px;
+		/* padding-top: 38px; */
 		padding-bottom: 70px;
 	}
 
-	.tablet {
+	/* .tablet {
 		display: none;
-	}
+	} */
 
 	.mobile,
 	.image2 {
 		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
 		max-height: 350px;
 		overflow: hidden;
 		object-fit: contain;
@@ -367,21 +396,29 @@ nav a:hover {
 	.gbImageLarge {
 		display: block;
 	}
-}
 
-@media (max-width: 700px) {
-	.gbImage, .gbPara {
-		clear: both;
-		width: 100%;
-		margin: 0 auto;
+	.gbPara h2 {
+		margin-top: 30px;
+		margin-bottom: 10px;
 	}
 
 	.gbPara {
 		padding-left: 0;
+		width: 100%;
 	}
+}
 
-	.gbPara h2 {
-		margin-bottom: 10px;
+@media (max-width: 700px) {
+	/* .gbImage, .gbPara {
+		clear: both;
+		width: 100%;
+		margin: 0 auto;
+	} */
+
+	.gbPara h2,
+	.gbPara a {
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -434,6 +471,15 @@ nav a:hover {
 		float: none;
 		width: 100%;
 		text-align: center;
+		margin: 0 auto;
+	}
+
+	.label:nth-of-type(2) {
+		margin: 50px 0;
+	}
+
+	.container {
+		width: 300px;
 	}
 }
 
