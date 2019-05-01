@@ -83,6 +83,7 @@ h3 {
 header {
     background: url(../images/image-1.png);
 	background-size: cover;
+	background-position: center center;
 	height: 100vh;
 	position: relative;
 }
@@ -90,15 +91,12 @@ header {
 h1 {
 	font-size: 120px;
 	color: #186684;
-	width: 40%;
+	width: 570px;
 	line-height: 0.82;
-	max-width: 100%;
 	padding: 50px;
 	margin-top: 280px;
 	margin-left: 44%;
 	background-color: rgba(227, 228, 234, 0.89);
-	background-size: cover;
-	background-position: center center;
 }
 
 h2 {
@@ -166,12 +164,29 @@ nav a:hover {
 	padding: 8px 0;
 }
 
+@media (max-width: 1260px) {
+	h1 {
+		font-size: 100px;
+		width: 490px;
+		margin-left: 35%;
+	}
+}
+
+@media (max-width: 945px) {
+	h1 {
+		font-size: 85px;
+		width: 400px;
+		padding: 35px;
+		margin-left: 25%;
+	}
+}
+
 @media (max-width: 700px) {
 	h1 {
 		font-size: 75px;
+		width: 340px;
+		padding: 25px;
 		margin-left: 18%;
-		/* background-size:
-		background-position: */
 	}
 
 	.header-top nav,
@@ -189,7 +204,7 @@ nav a:hover {
 	}
 }
 
-/* Section 1 - ABOUT*/
+/*ABOUT*/
 
 .section1 {
 	padding: 0;
@@ -232,6 +247,7 @@ nav a:hover {
 	margin-left: auto;
 }
 
+.tablet,
 .mobile {
 	display: none;
 }
@@ -265,12 +281,24 @@ nav a:hover {
 		width: 100%;
 	}
 
-	.image1 {
+	.image1,
+	.image2 {
 		display: none;
 	}
 
-	.mobile {
+	.tablet {
 		display: block;
+		margin-top: -300px;
+		margin-bottom: -300px;
+	}
+
+	.tablet2 {
+		display: block;
+		margin-top: -300px;
+	}
+
+	.description1 {
+		margin-top: 280px;
 	}
 }
 
@@ -284,6 +312,7 @@ nav a:hover {
 
 	.description1, .description2 {
 		padding: 0;
+		margin-top: 0;
 	}
 
 	.description {
@@ -293,7 +322,7 @@ nav a:hover {
 		padding-bottom: 70px;
 	}
 
-	.image1 {
+	.tablet {
 		display: none;
 	}
 
@@ -308,7 +337,7 @@ nav a:hover {
 
 }
 
-/* Section 2 - GIVING BACK */
+/*GIVING BACK */
 
 .givingBack {
 	background: #f4f4f4;
@@ -320,10 +349,24 @@ nav a:hover {
 	float: left;
 }
 
+.gbImageLarge {
+	display: none;
+}
+
 .gbPara {
 	width: 75%;
 	float: left;
 	padding-left: 40px;
+}
+
+@media (max-width: 1040px) {
+	.gbImage {
+		display: none;
+	}
+
+	.gbImageLarge {
+		display: block;
+	}
 }
 
 @media (max-width: 700px) {
