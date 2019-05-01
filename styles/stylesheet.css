@@ -72,6 +72,10 @@ h3 {
 	.wrapper {
 		width: 90%;
 	}
+
+	section {
+		padding: 50px 0;
+	}
 }
 
 /* HEADER */
@@ -232,33 +236,6 @@ nav a:hover {
 	display: none;
 }
 
-/* @media (max-width: 1040px) {
-	.image2,
-	.description1,
-	.description2 {
-		clear: both;
-		width: 100%;
-	}
-
-	.description1, .description2 {
-		padding: 0;
-	}
-
-	.description {
-		width: 90%;
-		margin: 0 auto;
-		padding-top: 38px;
-		padding-bottom: 38px;
-	}
-
-	.image1 {
-		display: none;
-	}
-
-	.mobile {
-		display: block;
-	} */
-
 @media (max-width: 1268px) {
 	.description {
 		padding-top: 70px;
@@ -280,6 +257,23 @@ nav a:hover {
 	}
 }
 
+@media (max-width: 1040px) {
+	.image2,
+	.description1,
+	.description2 {
+		clear: both;
+		width: 100%;
+	}
+
+	.image1 {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+}
+
 @media (max-width: 700px) {
 	.image2,
 	.description1,
@@ -296,20 +290,21 @@ nav a:hover {
 		width: 90%;
 		margin: 0 auto;
 		padding-top: 38px;
-		padding-bottom: 38px;
+		padding-bottom: 70px;
 	}
 
 	.image1 {
 		display: none;
 	}
 
-	.mobile {
+	.mobile,
+	.image2 {
 		display: block;
+		max-height: 350px;
+		overflow: hidden;
+		object-fit: contain;
+		object-position: 50% 50%;
 	}
-
-	/* .section1 img {
-		height: 200px;
-	} */
 
 }
 
@@ -385,6 +380,12 @@ nav a:hover {
 	color: #e85b26;
 }
 
+@media (max-width: 1400px) {
+	.container {
+		width: 630px;
+	}
+}
+
 @media (max-width: 700px) {
 	.label {
 		float: none;
@@ -417,7 +418,7 @@ nav a:hover {
 	margin: 0 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 	.gallery img {
 		width: calc(50% - 15px);
 	}
@@ -428,6 +429,10 @@ nav a:hover {
 	
 	.gallery img:nth-of-type(3) {
 		display: none;
+	}
+
+	.gram h2 {
+		margin-bottom: 40px;
 	}
 
 }
@@ -515,7 +520,17 @@ nav a:hover {
 	}
 } */
 
-@media (max-width: 700px) {
+@media (max-width: 1040px) {
+	.emailAddress {
+		width: 60%;
+	}
+
+	.button {
+		width: 40%;
+	}
+}
+
+@media (max-width: 800px) {
 
 	.contact, 
 	.updated, 
@@ -529,6 +544,10 @@ nav a:hover {
 
 	.button {
 		margin-top: 12px;
+	}
+
+	.updated h2 {
+		margin-top: 30px;
 	}
 
 }
